@@ -1,0 +1,119 @@
+/* components/ComponentStyles/JobOfferCard.css */
+.job-offer-card {
+  display: flex; background: white; border-radius: 16px; overflow: hidden;
+  margin: 16px 0; box-shadow: 0 6px 20px rgba(0,0,0,.12); transition: transform .2s;
+}
+.job-offer-card:hover { transform: translateY(-4px); }
+.customer-img { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 16px; }
+.offer-details { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.offer-details p { margin: 0; font-size: 14.5px; }
+.address { color: #555; font-style: italic; }
+.description { margin: 8px 0; }
+.budget { color: #d32f2f; font-weight: 600; }
+.requirements { color: #666; font-size: 13px; }
+.phone a { color: #1a73e8; text-decoration: none; }
+.whatsapp-btn { background: #25d366; color: white; padding: 8px 12px; border-radius: 8px; text-decoration: none; font-size: 13px; display: flex; align-items: center; gap: 6px; margin-top: 10px; width: fit-content; }
+
+
+/* Add to bottom */
+.offer-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: center;
+}
+.accept-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accepted-text {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Add to bottom of file */
+.offer-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: center;
+}
+.accept-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cancel-accept-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.job-offer-card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 16px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  transition: transform .2s;
+}
+.job-offer-card:hover { transform: translateY(-4px); }
+.customer-img { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 16px; }
+.offer-details { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.offer-details p { margin: 0; font-size: 14.5px; }
+.address { color: #555; font-style: italic; }
+.description { margin: 8px 0; }
+.budget { color: #d32f2f; font-weight: 600; }
+.requirements { color: #666; font-size: 13px; }
+.phone a { color: #1a73e8; text-decoration: none; }
+
+.offer-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: center;
+}
+.accept-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cancel-accept-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

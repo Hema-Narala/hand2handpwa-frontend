@@ -1,0 +1,84 @@
+/* Full responsive background */
+.landing-container {
+  background: linear-gradient(rgb(129, 89, 207), rgb(101, 188, 243));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive Image */
+.landing-logo {
+  width: 20%;
+  max-width: 140px;
+  min-width: 100px;
+  margin-bottom: 1px;
+}
+
+.landing-title {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.landing-subtitle {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto 30px auto;
+  line-height: 1.4;
+}
+
+
+/* Buttons group */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.landing-btn {
+  width: 230px;              /* fixed button width */
+  height: 40px;              /* fixed height */
+  border: 2px solid #ffffff;
+  border-radius: 12px;       /* slight curve */
+  background: rgba(255,255,255,0.1); /* very light transparent layer */
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.5px;     /* clean text spacing */
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* smooth animation */
+  transition: 0.3s ease;
+
+  /* white soft glow shadow */
+  box-shadow: 0 0 8px rgba(255,255,255,0.35);
+}
+
+.landing-btn:hover {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+/* Responsive Fix for small screens */
+@media (max-width: 600px) {
+  .landing-logo {
+    width: 60%;
+  }
+
+  .landing-btn {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}

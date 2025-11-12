@@ -1,0 +1,668 @@
+.profile-container {
+  max-width: 480px;
+  margin: 0 auto;
+  /* padding: 1rem; */
+
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9fb;
+  min-height: 100vh;
+  background: linear-gradient(180deg,#e7e6f6 0%, #d4d3ef 100%);
+  padding-bottom:120px;
+}
+
+/* Header */
+.profile-header {
+  background: linear-gradient(180deg, #8159cf 0%, #65bcf3 100%);
+  color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  text-align: left;
+  margin: -1rem -1rem 1.5rem;
+}
+.profile-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.profile-header p {
+  margin: 0.25rem 0 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  position: relative;
+  top: -2.5rem;
+}
+
+.profile-image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #8159cf;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.worker-name {
+  margin: 0.5rem 0 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.worker-badge {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.worker-badge span:first-child {
+  background: #e0d9ff;
+  color: #8159cf;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #4b9e22;
+  font-weight: 600;
+}
+
+.worker-bio {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.service-tag {
+  background: #f0f0ff;
+  color: #5e53c0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+}
+
+.edit-profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1.5px solid #8159cf;
+  color: #8159cf;
+  padding: 0.65rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: -1.5rem 1rem 1.5rem;
+}
+.stat-item {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.stat-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+.stat-item p {
+  margin: 0.35rem 0 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+.stat-item.highlight h3 {
+  color: #f4a261;
+}
+
+/* Sections */
+.info-section,
+.portfolio-section,
+.social-section,
+.reviews-section {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.info-section h3,
+.portfolio-section h3,
+.social-section h3,
+.reviews-section h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.info-item svg {
+  color: #999;
+}
+
+/* Portfolio */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.add-photos-btn {
+  background: #f0f0ff;
+  color: #5e53c0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.portfolio-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Social */
+.social-input {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f9f9fb;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+}
+.social-input svg {
+  color: #8159cf;
+  font-size: 1.3rem;
+}
+.social-input input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* Reviews */
+.review-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.review-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+.stars {
+  color: #f4a261;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.review-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* User Type Buttons */
+.user-type-selection {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.user-type-selection button {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1.5px solid #ddd;
+  background: #f9f9fb;
+  border-radius: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+.user-type-selection button.active {
+  border-color: #8159cf;
+  background: #f0f0ff;
+  color: #8159cf;
+}
+
+/* Edit Form */
+.edit-form {
+  padding-top: 1rem;
+}
+.edit-form h3 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border: 1.5px solid #ddd;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  background: #f9f9fb;
+}
+.edit-form textarea {
+  resize: none;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.service-btn {
+  position: relative;
+  padding: 0.75rem 0.5rem;
+  border: 1.5px solid #ddd;
+  background: #f9f9fb;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+.service-btn.selected {
+  border-color: #8159cf;
+  background: #f0f0ff;
+  color: #8159cf;
+}
+.tick {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #8159cf;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.save-btn, .cancel-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.save-btn {
+  background: #8159cf;
+  color: white;
+  border: none;
+}
+.cancel-btn {
+  background: transparent;
+  color: #8159cf;
+  border: 1.5px solid #8159cf;
+}
+
+/* Personal Info BELOW Edit Button */
+.personal-info-below {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+.personal-info-below .info-item {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.personal-info-below .info-item svg {
+  color: #999;
+  margin-right: 0.75rem;
+}
+
+/* 4 Stats in ONE BOX with Service-like Background */
+.stats-box {
+  background: #f0f0ff;
+  border-radius: 1.5rem;
+  /* padding: 1.25rem; */
+  padding-top:45px ;
+  padding-bottom:7px ;
+  margin: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.stat-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.stat-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+.stat-item p {
+  margin: 0.35rem 0 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+.stat-item.highlight h3 {
+  color: #f4a261;
+}
+
+/* Clear separation from next section */
+.portfolio-section,
+.social-section,
+.reviews-section {
+  margin-top: 1.5rem;
+}
+
+/* Experience Section */
+.experience-section {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  margin: 1.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+.add-photos-btn {
+  background: #f0f0ff;
+  color: #5e53c0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.experience-desc {
+  margin: 0;
+  color: #777;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* Profile Image with Delete */
+.profile-img-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.profile-img-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.delete-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.delete-btn {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Empty Profile */
+.empty-profile {
+  width: 90px;
+  height: 90px;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: #f9f9fb;
+}
+
+/* Experience Gallery */
+.experience-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.exp-img-wrapper {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.exp-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+.exp-img-wrapper .delete-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(231, 76, 60, 0.9);
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+/* Profile Modal */
+.profile-modal, .exp-modal {
+  background: white;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+}
+.modal-profile-img, .modal-exp-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.change-photo-btn, .remove-photo-btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.75rem 0;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.change-photo-btn {
+  background: #f0f0ff;
+  color: #5e53c0;
+  border: none;
+}
+.remove-photo-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Empty Profile */
+.empty-profile {
+  width: 90px;
+  height: 90px;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: #f9f9fb;
+}
+
+/* Experience Gallery */
+.experience-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.exp-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+

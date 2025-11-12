@@ -1,0 +1,33 @@
+/* Button base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 160ms ease;
+  background: #6c63ff;
+  color: white;
+  box-shadow: 0 1px 6px rgba(20,20,40,0.06);
+}
+
+/* sizes */
+.btn--sm { padding: 0.35rem 0.6rem; font-size: 0.85rem; border-radius: 10px; }
+.btn--default { padding: 0.6rem 1rem; font-size: 0.95rem; }
+.btn--lg { padding: 0.85rem 1.25rem; font-size: 1rem; }
+
+/* variants */
+.btn--default { background: linear-gradient(135deg,#6c63ff,#7b6cff); color: #fff; }
+.btn--outline { background: #fff; color: #1f2937; border-color: #e6e8ee; }
+.btn--ghost { background: transparent; color: #1f2937; border-color: transparent; }
+
+/* subtle hover */
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(30,20,60,0.08); }
+.btn--outline:hover { background: #f7f8fb; }
+
+/* destructive helper */
+.btn.destructive { background: #ef4444; color: #fff; border-color: #ef4444; }

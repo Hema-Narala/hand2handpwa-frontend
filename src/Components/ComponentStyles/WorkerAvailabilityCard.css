@@ -1,0 +1,110 @@
+/* components/ComponentStyles/WorkerAvailabilityCard.css */
+.worker-availability-card-full {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 16px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s;
+}
+
+.worker-availability-card-full:hover {
+  transform: translateY(-4px);
+}
+
+.worker-profile {
+  width: 90px;
+  padding: 16px;
+  text-align: center;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.worker-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+}
+
+.worker-profile p {
+  margin: 8px 0 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.worker-details {
+  flex: 1;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.worker-info p {
+  margin: 4px 0;
+  font-size: 14.5px;
+}
+
+.address { color: #555; font-style: italic; }
+.budget { color: #d32f2f; font-weight: 600; }
+.experience { color: #1976d2; }
+.ratings { color: #f9a825; }
+.requirements { color: #666; font-size: 13.5px; }
+.phone a { color: #1a73e8; text-decoration: none; }
+
+.worker-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-btn.pending { background: #ff9800; color: white; }
+.status-btn.accepted { background: #4caf50; color: white; }
+
+.edit-btn, .cancel-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-btn { background: #2196f3; color: white; }
+.cancel-btn { background: #f44336; color: white; }
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.accepted-msg {
+  background: #e8f5e9;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  color: #2e7d32;
+  font-style: italic;
+  font-size: 14px;
+}

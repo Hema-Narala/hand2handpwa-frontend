@@ -1,0 +1,58 @@
+/* credits.css */
+.credits-section{
+    display:flex;
+    flex-direction:column;
+    gap:12px
+}
+.credit-card{
+    background:#fff;
+    padding:12px;
+    border-radius:12px;
+    display:flex;
+    align-items:flex-start;
+    border:1px solid rgba(0,0,0,0.04);
+}
+.credit-left{
+    margin-right:12px
+}
+.credit-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#f4fbf6;
+}
+.credit-body{
+    flex:1;
+}
+.credit-title{
+    font-weight:700;
+    font-size:15px;
+    margin-bottom:6px;
+}
+.credit-customer{
+    font-size:13px;
+    color:#a7b0ba;
+    margin-bottom:8px;
+}
+.credit-meta{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+.badge.completed{
+    background:#6c5ce7;
+    color:#fff;
+    padding:6px 8px;
+    border-radius:12px;
+    font-size:12px;
+}
+.credit-date{
+    font-size:12px;
+    color:#a7b0ba;
+}
+.credit-amount{
+    font-weight:700;
+    color:#46b273;
+    margin-left:12px;
+    align-self:flex-start;
+}

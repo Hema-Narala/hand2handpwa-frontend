@@ -1,0 +1,126 @@
+/* src/components/ComponentStyles/BookingCard.css */
+.booking-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.booking-card:hover { transform: translateY(-2px); }
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.details-container { flex: 1; display: flex; flex-direction: column; }
+
+.profession { font-size: 16px; font-weight: bold; color: white; margin: 0 0 4px; }
+.name       { font-size: 14px; color: white; margin-bottom: 6px; }
+
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* GOLD STAR + WHITE RATING */
+.rating {
+  background-color: rgba(55, 30, 116, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rating .star-icon {
+  color: #FFD700 !important;
+  font-size: 14px;
+}
+.rating .rating-number {
+  color: white !important;
+}
+
+.charges {
+  background-color: rgba(43, 136, 230, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.date-time-action-row {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: -82px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.date-time-box { min-width: 80px; }
+.date-time-label {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
+.date-time-value {
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Base Button */
+.action-button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  min-width: 90px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.action-button-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+/* CANCEL & RE-BOOK: 100% SAME STYLE */
+.action-button.cancelled,
+.action-button.completed {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+.action-button.cancelled .action-button-text,
+.action-button.completed .action-button-text {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .booking-card { flex-direction: column; padding: 12px; }
+  .profile-image { margin-right: 0; margin-bottom: 10px; }
+  .date-time-action-row { margin-left: 0; justify-content: flex-start; width: 100%; }
+  .action-button { margin-left: 0; flex: 1; }
+}

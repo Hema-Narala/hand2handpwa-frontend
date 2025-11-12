@@ -1,0 +1,109 @@
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Image */
+.product-img-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Layout (Tight spacing) */
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 👈 adjust here */
+  padding: 12px;
+}
+
+/* Remove all default margins */
+.product-title,
+.product-price-row,
+.product-meta {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Price + Rating */
+.product-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  color: #ff8c00;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.product-rating span {
+  margin-left: 4px;
+  font-size: 0.95rem;
+}
+
+/* Meta */
+.product-meta {
+  display: flex;
+  gap: 10px; /* tighter */
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Add button */
+.add-btn {
+  width: 100%;
+  background: #6d4dfd;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #5a3de0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .product-img-wrapper {
+    height: 150px;
+  }
+}

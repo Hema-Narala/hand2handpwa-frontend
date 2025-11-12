@@ -1,0 +1,167 @@
+/* MAIN CONTAINER */
+.orders-list {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ORDER CARD */
+.order-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #e8f6ee;
+}
+
+/* TOP HEADER ROW */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+
+/* ORDER ID */
+.order-id {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* STATUS BADGES */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.delivered {
+  background: #dedcf5;
+  color: #5952e6;
+}
+
+.status.dispatched {
+  background: #e8f0ff;
+  color: #3568ff;
+}
+
+/* ORDER TOTAL */
+.order-total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5952e6;
+}
+
+/* DATE + ITEMS ROW */
+.date-row {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+/* ITEMS LIST */
+.items-box {
+  background: #f7fdf9;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+}
+
+.qty {
+  color: #666;
+}
+
+/* BUTTONS ROW */
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  gap: 10px;
+}
+
+/* TRACK ORDER BUTTON (outlined) */
+.track-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #5952e6;
+  background: transparent;
+  color: #5952e6;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.track-btn:hover {
+  background: #dedcf5;
+}
+
+/* REORDER BUTTON (solid) */
+.reorder-btn {
+  flex: 1;
+  padding: 10px 12px;
+  background: #5952e6;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.reorder-btn:hover {
+  background: #5952e6;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 480px) {
+  .order-header {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+  }
+
+  .order-total {
+    grid-column: 2 / 3;
+  }
+
+  .date-row {
+    font-size: 13px;
+  }
+
+  .buttons-row {
+    flex-direction: column;
+  }
+}

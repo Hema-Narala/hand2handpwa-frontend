@@ -1,0 +1,17 @@
+/* pending.css */
+.pending-section{display:flex;flex-direction:column;gap:12px}
+.pending-card{background:#fff;padding:12px;border-radius:12px;display:flex;align-items:flex-start;border:1px solid rgba(0,0,0,0.04)}
+.pending-left{margin-right:12px}
+.pending-icon{width:44px;height:44px;border-radius:50%;background:#fff7e6}
+.pending-body{flex:1}
+.pending-title{font-weight:700;font-size:15px;margin-bottom:6px}
+.pending-customer{font-size:13px;color:#a7b0ba;margin-bottom:8px}
+.pending-meta{display:flex;gap:8px;align-items:center}
+.badge.in-progress{background:#6c5ce7;color:#fff;padding:6px 8px;border-radius:12px;font-size:12px}
+.badge.pending{background:#6c5ce7;color:#fff;padding:6px 8px;border-radius:12px;font-size:12px}
+.pending-date{font-size:12px;color:#a7b0ba}
+.progress-row{margin-top:10px}
+.progress-label{font-size:13px;color:#a7b0ba;margin-bottom:6px;display:block}
+.progress-bar{height:8px;background:#eef4f6;border-radius:10px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#f4b05b,#f39c12);border-radius:10px}
+.pending-amount{font-weight:700;color:#f4b05b;margin-left:12px;align-self:flex-start}

@@ -1,0 +1,9 @@
+.form-label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 6px;
+  margin-bottom: 4px;
+  user-select: none;
+}

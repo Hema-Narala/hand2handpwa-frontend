@@ -1,0 +1,14 @@
+/* Badge */
+.badge { 
+    display: inline-flex;
+    align-items: center; 
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.7rem; 
+    border-radius: 0.4rem; 
+    font-weight: 500; 
+    width: fit-content; 
+}
+
+.badge.default { background: #0ea5e9; color: white; }
+.badge.secondary { background: #e5e7eb; color: #444; }
+.badge.destructive { background: #ef4444; color: white; }

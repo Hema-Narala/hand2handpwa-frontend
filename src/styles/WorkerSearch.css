@@ -1,0 +1,151 @@
+/* src/styles/WorkerSearch.css */
+:root {
+  --primary-purple: #8159cf;
+  --primary-blue: #65bcf3;
+  --light-pink-purple: #f8f1ff;
+  --text-dark: #333;
+  --text-light: #666;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
+
+.worker-search-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #a07be3ff 0%, #69b7d5ff 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-dark);
+  padding: 20px;
+  position: relative;
+}
+
+/* Header */
+.header-section h1 { 
+  font-size: 28px; 
+  font-weight: bold; 
+  margin: 40px 0 20px; 
+  color: white; 
+  text-align: center; 
+}
+.toggle-container { 
+  display: flex; 
+  justify-content: center; 
+  background: rgba(255,255,255,0.2); 
+  border-radius: 25px; 
+  padding: 4px; 
+  backdrop-filter: blur(10px); 
+  margin: 0 auto 20px;
+  max-width: 380px;
+}
+.toggle-btn { 
+  flex: 1; 
+  padding: 12px 20px; 
+  background: none; 
+  border: none; 
+  color: white; 
+  font-weight: 600; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+.toggle-btn.active { 
+  background: white; 
+  color: var(--primary-purple); 
+}
+
+/* SERVICE BUTTONS – TRANSPARENT */
+.service-buttons-section {
+  padding: 20px 0;
+  position: relative;
+}
+
+.scroll-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.service-buttons-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  flex: 1;
+  scrollbar-width: none;
+}
+.service-buttons-scroll::-webkit-scrollbar { display: none; }
+
+.scroll-btn {
+  background: rgba(255,255,255,0.3);
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+/* TRANSPARENT SERVICE BUTTONS */
+.service-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  background: transparent !important;
+  border: 1.5px solid rgba(255,255,255,0.4) !important;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 70px;
+  backdrop-filter: blur(8px);
+}
+.service-btn:hover, .service-btn.active {
+  background: rgba(255,255,255,0.25) !important;
+  border-color: white !important;
+  transform: translateY(-3px);
+}
+.service-icon { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; margin-bottom: 6px; }
+.service-btn span { font-size: 11px; font-weight: 600; color: white; }
+
+/* Posts Section */
+.posts-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+.posts-section h2 { 
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: var(--text-dark); 
+  font-size: 18px; 
+}
+
+.no-posts {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (max-width: 480px) {
+  .worker-search-container { padding: 10px; }
+  .header-section h1 { font-size: 24px; margin-top: 50px; }
+  .service-btn { min-width: 60px; padding: 10px 6px; }
+  .service-icon { width: 32px; height: 32px; }
+  .scroll-btn { width: 32px; height: 32px; font-size: 16px; }
+}

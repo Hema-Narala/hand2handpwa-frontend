@@ -1,0 +1,182 @@
+/* components/ComponentStyles/CreateJobPostForm.css */
+.create-job-section {
+  padding: 20px;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+/* Form */
+.create-job-form-container {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.form-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.create-job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-job-form input,
+.create-job-form select,
+.create-job-form textarea {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15.5px;
+  background: #fafafa;
+  transition: all .25s;
+}
+
+.create-job-form input:focus,
+.create-job-form select:focus,
+.create-job-form textarea:focus {
+  outline: none;
+  border-color: rgb(129, 89, 207);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(129,89,207,.15);
+}
+
+.readonly-input {
+  background: #f0f0f0 !important;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.create-job-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.submit-btn, .cancel-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn { background: rgb(129,89,207); color: white; }
+.submit-btn:hover { background: rgb(110,70,190); }
+
+.cancel-btn { background: #e74c3c; color: white; }
+.cancel-btn:hover { background: #c0392b; }
+
+/* Job Card */
+.job-post-card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 16px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  transition: transform .2s;
+}
+
+.job-post-card:hover { transform: translateY(-4px); }
+
+.user-profile {
+  width: 90px;
+  padding: 16px;
+  text-align: center;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.user-profile img {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+}
+
+.user-profile p {
+  margin: 8px 0 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.job-details { flex: 1; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.job-info p { margin: 4px 0; font-size: 14.5px; }
+.address { color:#555; font-style:italic; }
+.description { margin:8px 0; }
+.budget { color:#d32f2f; font-weight:600; }
+.requirements { color:#666; font-size:13.5px; }
+.phone a { color:#1a73e8; text-decoration:none; }
+
+.job-actions { display:flex; gap:10px; flex-wrap:wrap; }
+.status-btn { padding:8px 16px; border:none; border-radius:25px; font-size:13px; font-weight:bold; cursor:pointer; }
+.status-btn.pending { background:#ff9800; color:#fff; }
+.status-btn.accepted { background:#4caf50; color:#fff; }
+.edit-btn, .cancel-btn { padding:8px 14px; border:none; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; }
+.edit-btn { background:#2196f3; color:#fff; }
+.cancel-btn { background:#f44336; color:#fff; }
+.whatsapp-btn { background:#25d366; color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; font-size:13px; font-weight:600; display:flex; align-items:center; gap:6px; }
+
+.accepted-worker { display:flex; align-items:center; gap:12px; margin-top:16px; padding:14px; background:#e8f5e9; border-radius:12px; cursor:pointer; }
+.accepted-worker img { width:50px; height:50px; border-radius:50%; object-fit:cover; }
+.accepted-worker p { margin:0; font-size:14px; }
+.accepted-msg { color:#2e7d32; font-style:italic; font-size:13px; }
+
+.no-posts {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: rgb(129,89,207);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Add this to bottom of your existing CSS */
+.post-another-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.post-another-btn {
+  background: rgb(129, 89, 207);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(129, 89, 207, 0.3);
+  transition: all 0.2s;
+}
+
+.post-another-btn:hover {
+  background: rgb(110, 70, 190);
+  transform: translateY(-2px);
+}

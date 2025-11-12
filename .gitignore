@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+coverage/
+
+# Runtime / env
+.env
+.env.local
+.env.*.local
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Misc
+.cache/
+.tmp/
+*.tmp
+
+# Static generated assets that may be large
+public/static/
+public/uploads/
+
+# If you have local assets that are built, ignore them
+src/assets/build/

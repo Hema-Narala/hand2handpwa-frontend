@@ -1,0 +1,98 @@
+.bottom-tab {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 74px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 12px;
+  box-shadow: 0 -8px 30px rgba(35,27,78,0.08);
+  z-index: 90;
+}
+
+/* regular tab item (4 side items) */
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #5a52e6ac; /* inactive color */
+  font-size: 20px;
+  width: 56px;
+  height: 56px;
+}
+
+.tab-item svg {
+  color: inherit; /* icon inherits active/inactive color */
+}
+
+.tab-item .tab-label {
+  font-size: 11px;
+  color: inherit; /* label inherits color */
+}
+
+/* active state */
+.tab-item.active {
+  color: #5952e6; /* active color */
+}
+
+.tab-item.active .tab-label {
+  font-weight: 700;
+}
+
+
+/* center special home button */
+.tab-home {
+  width: 78px;
+  height: 78px;
+  margin-top: -38px; /* raises it above the bar */
+  background: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.home-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #5a52e6b0; /* dark purple default */
+  display: grid;
+  place-items: center;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.home-icon {
+  color: white;
+  font-size: 24px;
+}
+
+/* when home selected: bg -> blue, icon -> purple */
+.tab-home.home-selected .home-circle {
+  /* background: rgb(153, 104, 205); blue when clicked */
+  background:#5952e6;
+  transform: translateY(-4px);
+}
+
+.tab-home.home-selected .home-icon {
+  color: #fff; /* purple icon */
+}
+
+/* smaller screens adjustments */
+@media (max-width: 420px) {
+  .tab-item { font-size: 18px; width: 48px; height: 48px; }
+  .home-circle { width: 58px; height: 58px; }
+  .tab-home { width: 68px; height: 68px; margin-top: -32px; }
+}
+
+/* Desktop spacing */
+@media (min-width: 900px) {
+  .bottom-tab { justify-content: center; gap: 36px; max-width: 900px; margin: 0 auto; left: 0; right: 0; }
+}
