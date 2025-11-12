@@ -1,7 +1,7 @@
 // src/screens/BookingScreen.jsx
 import React, { useState } from "react";
 import "../styles/BookingScreen.css";
-import BookingCard from "../components/ComponentScreens/BookingCard";
+import BookingCard from "../Components/ComponentScreens/BookingCard";
 import { IoChevronBack } from "react-icons/io5";
 
 export default function BookingScreen({ navigation }) {
