@@ -19,7 +19,7 @@ const SignupScreen = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post("https://hand2handpwa-backend.onrender.com/api/auth/signup", {
         username,
         password,
         confirmPassword,
