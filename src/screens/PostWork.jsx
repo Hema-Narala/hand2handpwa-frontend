@@ -1,9 +1,9 @@
 // src/screens/PostWork.jsx
 import React, { useState, useRef } from "react";
 import "../styles/PostWork.css";
-import CreateWorkPostForm from "../components/ComponentScreens/CreateWorkPostForm";
-import WorkerAvailabilityCard from "../components/ComponentScreens/WorkerAvailabilityCard";
-import JobOfferCard from "../components/ComponentScreens/JobOfferCard";
+import CreateWorkPostForm from "../Components/ComponentScreens/CreateWorkPostForm";
+import WorkerAvailabilityCard from "../Components/ComponentScreens/WorkerAvailabilityCard";
+import JobOfferCard from "../Components/ComponentScreens/JobOfferCard";
 import { IoChevronBack } from "react-icons/io5";
 
 // ICONS

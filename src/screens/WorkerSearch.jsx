@@ -1,9 +1,9 @@
 // src/screens/WorkerSearch.jsx
 import React, { useState, useRef } from "react";
 import "../styles/WorkerSearch.css";
-import JobPostCard from "../components/ComponentScreens/JobPostCard.jsx";
+import JobPostCard from "../Components/ComponentScreens/JobPostCard.jsx";
 import { IoChevronBack, IoLogoWhatsapp } from "react-icons/io5";
-import CreateJobPostForm from "../components/ComponentScreens/CreateJobPostForm";
+import CreateJobPostForm from "../Components/ComponentScreens/CreateJobPostForm";
 
 // ICONS
 import plumberIcon from "../assets/plumber.png";
