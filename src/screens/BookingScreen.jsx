@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../styles/BookingScreen.css";
 import BookingCard from "../Components/ComponentScreens/BookingCard";
 import { IoChevronBack } from "react-icons/io5";
+import Header from "../Components/ComponentScreens/Header";
 
 export default function BookingScreen({ navigation }) {
   const [activeTab, setActiveTab] = useState("Active");
@@ -47,6 +48,12 @@ export default function BookingScreen({ navigation }) {
 
   return (
     <div className="bookings-container">
+      <Header 
+        heading="Your Bookings"
+        text="Take a look of your bookings"
+        // onBack={goBack}
+        onBack={() => console.log("Back button pressed")}
+      />
       <button className="back-button" onClick={() => navigation?.goBack?.()}>
         <IoChevronBack size={24} color="white" />
       </button>

@@ -1,7 +1,7 @@
 /* ✅ Header Container */
 .sell-hero {
   /* background: linear-gradient(135deg, #6a64ef, #5952e6); */
-  background: linear-gradient(135deg,rgb(129, 89, 207), rgb(101, 188, 243));
+  background: linear-gradient(135deg,rgb(129, 89, 207), rgb(101, 188, 243)) !important; 
   color: #fff;
   padding: 18px;
   padding-top: 40px;
