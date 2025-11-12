@@ -1,12 +1,12 @@
 /* Root / page layout */
 .pg-root {
-  min-height: 100vh;
+  min-height: 100vh+40;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #eaf2ff 0%, #ffffff 60%);
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   margin: 0;
-  padding-bottom: 92px; /* space for bottom tab */
+  padding-bottom: 100px; /* space for bottom tab */
   color: #2b2b2b;
 }
 
@@ -499,14 +499,14 @@
 }
 
 .impact-title {
-  font-size: 16px;
+  font-size: 20px;
   color: #5952e6;
   font-weight: bold;
 }
 
 .impact-subtitle {
-  font-size: 13px;
-  color: #5952e6;
+  font-size: 16px;
+  /* color: #5952e6; */
 }
 
 .impact-card-container {
@@ -615,9 +615,13 @@
 }
 
 .wallet-title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  color: #5952e6;
+  /* color: #5952e6; */
+  color:rgb(129, 89, 207);
+}
+.wallet-subtitle {
+  font-size: 16px;
 }
 
 .wallet-body {

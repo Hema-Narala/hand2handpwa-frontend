@@ -312,7 +312,7 @@ const HomeScreen = () => {
         {/* ENVIRONMENTAL IMPACT */}
         <div className="impact-wrapper">
           <div className="impact-header">
-            <p className="impact-title">🌱 Environmental Impact</p>
+            <p className="impact-title">✨ Your Impact since day 1</p>
             <p className="impact-subtitle">Your contribution to a sustainable future</p>
           </div>
 
@@ -320,37 +320,44 @@ const HomeScreen = () => {
 
             <div className="impact-row">
               <div className="impact-card green-card">
-                <div className="icon-circle green-bg">
-                  <IoReloadOutline size={24} color="#fff" /> {/* ✅ FIXED */}
-                </div>
+                {/* <div className="icon-circle green-bg">
+                  <IoReloadOutline size={24} color="#fff" /> 
+                </div> */}
                 <p className="card-value">246</p>
                 <p className="card-label">Jobs Completed</p>
               </div>
 
               <div className="impact-card green-card">
-                <div className="icon-circle green-bg">
+                {/* <div className="icon-circle green-bg">
                   <IoLeafOutline size={24} color="#fff" />
-                </div>
+                </div> */}
                 <p className="card-value">$3412</p>
                 <p className="card-label">Earned this month</p>
               </div>
             </div>
 
             <div className="impact-row">
-              <div className="impact-card yellow-card">
-                <div className="icon-circle yellow-bg">
+              <div className="impact-card green-card">
+                {/* <div className="icon-circle green-bg">
                   <IoTrophyOutline size={24} color="#fff" />
-                </div>
-                <p className="card-value bronze">Bronze</p>
-                <p className="card-label bronze">Eco Level</p>
+                </div> */}
+                <p className="card-value ">4.8</p>
+                <p className="card-label ">Average Rate</p>
               </div>
 
-              <div className="impact-card yellow-card">
+              {/* <div className="impact-card yellow-card">
                 <div className="icon-circle yellow-bg">
                   <IoStarOutline size={24} color="#fff" />
                 </div>
-                <p className="card-value bronze">5 ★</p>
-                <p className="card-label bronze">Community Rating</p>
+                <p className="card-value bronze">98%</p>
+                <p className="card-label bronze">Success Rate</p>
+              </div> */}
+              <div className="impact-card green-card">
+                {/* <div className="icon-circle green-bg">
+                  <IoStarOutline size={24} color="#fff" />
+                </div> */}
+                <p className="card-value">98%</p>
+                <p className="card-label">Success Rate</p>
               </div>
             </div>
             
@@ -369,7 +376,7 @@ const HomeScreen = () => {
 
             <div className="wallet-card">
               <IoWalletOutline size={22} color="#7c5c98" />
-              <p className="wallet-card-title">Available Balance</p>
+              <p className="wallet-card-title">Amount you spent</p>
               <p className="wallet-card-value">₹0</p>
             </div>
 
@@ -381,21 +388,21 @@ const HomeScreen = () => {
 
               <div className="earning-card">
                 <p className="earning-value">₹0</p>
-                <p className="earning-label">Withdrawed</p>
+                <p className="earning-label">Total Earned this month</p>
               </div>
             </div>
 
             <div className="wallet-card">
               <IoWalletOutline size={22} color="#7c5c98" />
               <p className="wallet-card-title">
-                Estimated amount per month if you continue Recycling
+                Estimated amount per month if you continue working
               </p>
               <p className="wallet-card-value">₹0</p>
             </div>
 
             <button className="shop-button">
               <IoCartOutline size={18} color="#fff" />
-              Shop Eco Products
+              Shop Products
             </button>
           </div>
         </div>
